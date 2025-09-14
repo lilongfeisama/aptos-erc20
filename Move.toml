@@ -4,7 +4,9 @@ version = "0.0.1"
 authors = ["example"]
 
 [addresses]
-token = "0x0"
+addr = "0x35196d99ae6fed94c5133eb2bed70c87600f9b39e6e5912c2b0231c5fbf4d318"
+
 
 [dependencies]
-AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework", rev = "main" }
+AptosFramework = { local = "../aptos-core/aptos-move/framework/aptos-framework" }
+AptosStdlib = { local = "../aptos-core/aptos-move/framework/aptos-stdlib" }

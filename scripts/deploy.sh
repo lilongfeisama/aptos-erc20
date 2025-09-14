@@ -12,5 +12,4 @@ PROFILE=${2:-default}
 aptos move publish \
   --package-dir "$(dirname "$0")/.." \
   --named-addresses token=$ADDR \
-  --profile $PROFILE \
-  --network testnet
+  --profile $PROFILE

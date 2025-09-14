@@ -1,4 +1,4 @@
-module token::erc20 {
+module addr::erc20 {
     use aptos_framework::managed_coin;
     use aptos_framework::coin;
     use std::signer;
@@ -36,8 +36,9 @@ module token::erc20 {
         let coin = coin::withdraw<Erc20Coin>(sender, amount);
         coin::deposit(recipient, coin);
     }
-
+    
     /// View function returning the balance of `addr`.
+    #[view]
     public fun balance(addr: address): u64 {
         coin::balance<Erc20Coin>(addr)
     }

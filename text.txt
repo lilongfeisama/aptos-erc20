@@ -1,0 +1,17 @@
+aptos move run --function-id 
+0x35196d99ae6fed94c5133eb2bed70c87600f9b39e6e5912c2b0231c5fbf4d318::erc20::register 
+--profile testnet
+
+
+aptos move run --function-id 0x35196d99ae6fed94c5133eb2bed70c87600f9b39e6e5912c2b0231c5fbf4d318::erc20::initialize --profile testnet
+
+
+
+aptos move run --function-id 0x35196d99ae6fed94c5133eb2bed70c87600f9b39e6e5912c2b0231c5fbf4d318::erc20::register --profile testnet
+
+
+
+aptos move run --function-id "0x35196d99ae6fed94c5133eb2bed70c87600f9b39e6e5912c2b0231c5fbf4d318::erc20::balance" --args address:0x35196d99ae6fed94c5133eb2bed70c87600f9b39e6e5912c2b0231c5fbf4d318 --profile testnet
+
+
+aptos move publish --named-addresses "addr=0x35196d99ae6fed94c5133eb2bed70c87600f9b39e6e5912c2b0231c5fbf4d318"  --profile testnet
